@@ -45,16 +45,16 @@ ${BOLD}${YELLOW}Beispiele:${RESET}
      # Zeigt den Status der Datenbank mit Standard SYSDBA-Rechten
 
   ${BLUE}2. Status einer bestimmten Datenbank abfragen:${RESET}
-     $0 fxoutt
-     # Zeigt den Status der Datenbank 'fxoutt'
+     $0 myoradb
+     # Zeigt den Status der Datenbank 'myoradb'
 
   ${BLUE}3. Einen benutzerdefinierten SQL-Befehl ausführen:${RESET}
      $0 'select sysdate from dual'
      # Führt eine einfache Datums-Abfrage aus
 
   ${BLUE}4. Einen benutzerdefinierten SQL-Befehl auf einer bestimmten Datenbank ausführen:${RESET}
-     $0 fxoutt 'select * from v\$version'
-     # Zeigt die Oracle-Version der Datenbank 'fxoutt'
+     $0 myoradb 'select * from v\$version'
+     # Zeigt die Oracle-Version der Datenbank 'myoradb'
 
   ${BLUE}5. Einen komplexeren SQL-Befehl ausführen:${RESET}
      $0 'select owner, table_name from all_tables where rownum <= 5'
@@ -65,16 +65,16 @@ ${BOLD}${YELLOW}Beispiele:${RESET}
      # Führt mehrere SQL-Befehle aus einer Datei aus
 
   ${BLUE}7. Eine SQL-Skriptdatei auf einer bestimmten Datenbank ausführen:${RESET}
-     $0 fxoutt /pfad/zu/ihrer/script.sql
-     # Führt Skript auf der Datenbank 'fxoutt' aus
+     $0 myoradb /pfad/zu/ihrer/script.sql
+     # Führt Skript auf der Datenbank 'myoradb' aus
 
   ${BLUE}8. Als bestimmter Benutzer ausführen:${RESET}
      $0 -u system 'select * from dba_users'
      # Führt Befehl als SYSTEM-Benutzer aus
 
   ${BLUE}9. Als bestimmter Benutzer auf spezifischer Datenbank:${RESET}
-     $0 -u system fxoutt 'select * from dba_tables'
-     # Führt Befehl als SYSTEM-Benutzer auf 'fxoutt' aus
+     $0 -u system myoradb 'select * from dba_tables'
+     # Führt Befehl als SYSTEM-Benutzer auf 'myoradb' aus
 
 ${BOLD}${YELLOW}Hinweise:${RESET}
   - Ohne -u Option werden die Befehle als SYSDBA ausgeführt
