@@ -163,11 +163,11 @@ Tests verify:
 
 ## License
 
-[MIT](LICENSE)
+GNU
 
 ## Author
 
-[Your Name]
+mrAibo - Aleksej Voronin
 
 ## Changelog
 
